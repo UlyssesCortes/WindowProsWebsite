@@ -3,7 +3,7 @@ import '../CSS/Navbar.css'
 
 export default function Navbar() {
     return (
-        <section className='navBar'>
+        <nav className='navBar'>
             <div className='leftNav'>
                 <p className='title'>WindowPros</p>
             </div>
@@ -13,6 +13,6 @@ export default function Navbar() {
                 <a href='#services' className='links'>Services</a>
                 <a href='#contact' className='links contactLink'>ContactUs</a>
             </div>
-        </section>
+        </nav>
     )
 }

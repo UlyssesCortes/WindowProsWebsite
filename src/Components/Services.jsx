@@ -4,8 +4,8 @@ import '../CSS/Services.css'
 
 export default function Services() {
     return (
-        <section className='services'>
-            <div className='subHeader'>
+        <main className='services'>
+            <div className='subHeaderServ'>
                 <p className='sectionTitle'>Services</p>
                 <div className='serviceQuote'>
                     <div className='quotes'></div>
@@ -61,6 +61,6 @@ export default function Services() {
                     </section>
                 </div>
             </div>
-        </section>
+        </main>
     )
 }

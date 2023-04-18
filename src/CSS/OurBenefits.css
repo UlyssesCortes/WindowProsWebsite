@@ -1,0 +1,36 @@
+.ourBenefits {
+    margin-top: 150px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftOurBenefits {
+    width: 50%;
+}
+
+.subHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitsImg {
+    margin-left: -90px;
+    background-image: url("../Assets/Benefits.svg");
+    z-index: 1;
+    width: 850px;
+    height: 680px;
+    scale: .8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightOurBenefits {
+    width: 45%;
+    height: 580px;
+    background-color: white;
+    border-radius: 20px;
+}
