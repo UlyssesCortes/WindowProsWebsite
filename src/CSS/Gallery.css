@@ -1,0 +1,114 @@
+.gallery {
+    margin-top: 150px;
+}
+
+.galleryContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 100px;
+}
+
+.middleImgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.topImg {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45px;
+}
+
+
+.bottomImg {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45px;
+}
+
+.piller1,
+.piller2,
+.rectangle,
+.rectangle2,
+.square,
+.square2,
+.rombus,
+.rombus2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piller1 {
+    background-color: #D9D9D9;
+    width: 255px;
+    height: 488px;
+    background-image: url("../Assets/john.jpg");
+
+}
+
+
+.rectangle {
+    background-color: #D9D9D9;
+    width: 350px;
+    height: 209px;
+    background-image: url("../Assets/beachPic.jpg");
+
+}
+
+.rombus {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 209px;
+    background-image: url("../Assets/CalvaryChapel.jpg");
+    /* transform: rotate(-45deg); */
+}
+
+.square {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 209px;
+    background-image: url("../Assets/Stone Brewery.jpg");
+}
+
+.rectangle2 {
+    background-color: #D9D9D9;
+    width: 350px;
+    height: 209px;
+    background-image: url("../Assets/OceansideCity.jpg");
+}
+
+.rombus2 {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 209px;
+    background-image: url("../Assets/PizzaPort.jpg");
+    /* transform: rotate(-45deg); */
+}
+
+.square2 {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 209px;
+    background-image: url("../Assets/TeriCafe.jpg");
+}
+
+.piller2 {
+    background-color: #D9D9D9;
+    width: 255px;
+    height: 488px;
+    background-image: url("../Assets/ThreeStory.jpg");
+
+}
+
+.img {
+    transition: all ease-in-out .45s;
+}
+
+.img:hover {
+    border-radius: 5%;
+    scale: 2;
+}

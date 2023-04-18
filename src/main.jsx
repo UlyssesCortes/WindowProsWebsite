@@ -6,6 +6,7 @@ import Hero from './Components/Hero'
 import Services from './Components/Services'
 import OurBenefits from './Components/OurBenefits'
 import Reviews from './Components/Reviews'
+import Gallery from './Components/Gallery'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Services />
     <OurBenefits />
     <Reviews />
+    <Gallery />
   </React.StrictMode>,
 )
