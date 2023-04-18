@@ -1,0 +1,125 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.subHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionTitle {
+    font-size: 64px;
+}
+
+.serviceBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.serviceBox {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+}
+
+.residential {
+    color: white;
+}
+
+.residential {
+    background: #1D1D1D;
+}
+
+.servIcon {
+    width: 83px;
+    height: 83px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionSlogan {
+    font-size: 18px;
+}
+
+.sectionSlogan span {
+    font-size: 38px;
+}
+
+.bottomCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.quotes {
+    margin-bottom: 30px;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../Assets/Quote.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.serviceQuote {
+    display: flex;
+    align-items: center;
+}
+
+.plusIcon,
+.plusIcon2,
+.avatarImg {
+    width: 53px;
+    height: 53px;
+    background-image: url("../Assets/Plus.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatarImg {
+    background-image: url("../Assets/Avatar.svg");
+    margin-left: 20px;
+}
+
+.plusIcon2 {
+    background-image: url("../Assets/Plus2.svg");
+}
+
+.learnMoreBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.residentialLearn {
+    background-color: #0066FE;
+    border-radius: 40px;
+    padding: 14px;
+    color: white;
+}
+
+.homeIcon {
+    background-image: url("../Assets/Home.svg");
+}
+
+.buildingIcon {
+    background-image: url("../Assets/Building.svg");
+}
+
+.solarIcon {
+    background-image: url("../Assets/Solar.svg");
+}
