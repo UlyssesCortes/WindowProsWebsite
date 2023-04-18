@@ -1,0 +1,55 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.slogan {
+    font-size: 80px;
+    font-family: 'Merriweather', serif;
+}
+
+.sloganSpecial {
+    color: #4986E1;
+
+}
+
+.subSlogan {
+    font-size: 20px;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 50px;
+}
+
+.quoteHeroBtn {
+    background: #1D1D1D;
+    border-radius: 20px;
+    width: 249px;
+    height: 55px;
+    color: white;
+    font-size: 24px;
+}
+
+.joinUsHeroBtn {
+    color: #4986E1;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+}
+
+.windowImg {
+    background-image: url("../Assets/window.svg");
+    z-index: 1;
+    width: 559px;
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
