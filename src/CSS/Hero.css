@@ -36,6 +36,7 @@
     height: 55px;
     color: white;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .joinUsHeroBtn {
@@ -43,6 +44,7 @@
     background-color: transparent;
     border: none;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .windowImg {
