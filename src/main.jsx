@@ -7,6 +7,7 @@ import Services from './Components/Services'
 import OurBenefits from './Components/OurBenefits'
 import Reviews from './Components/Reviews'
 import Gallery from './Components/Gallery'
+import Footer from './Components/Footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <OurBenefits />
     <Reviews />
     <Gallery />
+    <Footer />
   </React.StrictMode>,
 )

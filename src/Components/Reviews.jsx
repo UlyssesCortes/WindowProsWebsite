@@ -4,7 +4,7 @@ import '../CSS/Reviews.css'
 
 export default function Reviews() {
     return (
-        <main className='reviewsSection'>
+        <main className='reviewsSection' id='reviews'>
 
             <section className='subHeader'>
                 <p className='sectionTitle'>Reviews</p>
