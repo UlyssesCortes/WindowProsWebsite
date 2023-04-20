@@ -3,7 +3,7 @@ import '../CSS/Navbar.css'
 
 export default function Navbar() {
     return (
-        <nav className='navBar'>
+        <nav className='navBar' id='top'>
             <div className='leftNav'>
                 <p className='title'>WindowPros</p>
             </div>

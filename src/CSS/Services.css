@@ -24,6 +24,7 @@
 }
 
 .serviceBox {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -126,4 +127,32 @@
 
 .solarIcon {
     background-image: url("../Assets/Solar.svg");
+}
+
+.residential[data-isOpen="true"] {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 970px;
+}
+
+.commercial[data-isOpen="true"] {
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 970px;
+}
+
+.solar[data-isOpen="true"] {
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 970px;
 }

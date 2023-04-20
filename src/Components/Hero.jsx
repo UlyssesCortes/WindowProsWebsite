@@ -3,7 +3,7 @@ import '../CSS/Hero.css'
 
 export default function Hero() {
     return (
-        <main className='hero'>
+        <main className='hero' id='hero'>
             <div className='heroLeft'>
                 <div className='slogan'>
                     <p>Best
@@ -18,8 +18,8 @@ export default function Hero() {
                         100% happiness guarantee</p>
                 </div>
                 <div className='heroBtns'>
-                    <button className='quoteHeroBtn'>Get A Quote</button>
-                    <button className='joinUsHeroBtn'>Join Us</button>
+                    <button className='quoteHeroBtn'>Get a quote</button>
+                    <button className='joinUsHeroBtn' onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")}>Join Us</button>
                 </div>
             </div>
 

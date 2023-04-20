@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { motion } from "framer-motion";
 import '../CSS/Services.css'
 
 
 export default function Services() {
+    const [expandResidential, setExpandResidential] = useState(false)
+    const [expandCommercial, setExpandCommercial] = useState(false)
+    const [expandSolar, setExpandSolar] = useState(false)
+
     return (
         <main className='services' id='services'>
             <div className='subHeaderServ'>
@@ -19,7 +24,10 @@ export default function Services() {
             </div>
 
             <div className='serviceBoxes'>
-                <div className='residential serviceBox'>
+                <motion.div className='residential serviceBox'
+                    layout
+                    data-isOpen={expandResidential}
+                >
                     <div className='homeIcon servIcon'></div>
                     <p className='sectionSlogan'><span>Residential</span>
                         <br></br>
@@ -28,12 +36,16 @@ export default function Services() {
                         cleaning
                     </p>
                     <section className='bottomCard'>
-                        <div className='plusIcon2 '></div>
+                        <motion.a className='plusIcon2' href="#services"
+                            onClick={() => setExpandResidential(!expandResidential)}
+                        ></motion.a>
                         <button className='learnMoreBtn residentialLearn'>Learn More</button>
                     </section>
-
-                </div>
-                <div className='serviceBox'>
+                </motion.div>
+                <motion.div className='commercial serviceBox'
+                    layout
+                    data-isOpen={expandCommercial}
+                >
                     <div className='buildingIcon servIcon'></div>
                     <p className='sectionSlogan'><span>Commercial</span>
                         <br></br>
@@ -42,12 +54,17 @@ export default function Services() {
                         cleaning
                     </p>
                     <section className='bottomCard'>
-                        <div className='plusIcon'></div>
+                        <motion.a className='plusIcon' href="#services"
+                            onClick={() => setExpandCommercial(!expandCommercial)}
+                        ></motion.a>
                         <button className='learnMoreBtn'>Learn More</button>
                     </section>
 
-                </div>
-                <div className='serviceBox'>
+                </motion.div>
+                <motion.div className='solar serviceBox'
+                    layout
+                    data-isOpen={expandSolar}
+                >
                     <div className='solarIcon servIcon'></div>
                     <p className='sectionSlogan'><span>Solar</span>
                         <br></br>
@@ -56,10 +73,12 @@ export default function Services() {
                         energi saving
                     </p>
                     <section className='bottomCard'>
-                        <div className='plusIcon'></div>
+                        <motion.a className='plusIcon' href="#services"
+                            onClick={() => setExpandSolar(!expandSolar)}
+                        ></motion.a>
                         <button className='learnMoreBtn'>Learn More</button>
                     </section>
-                </div>
+                </motion.div>
             </div>
         </main>
     )
