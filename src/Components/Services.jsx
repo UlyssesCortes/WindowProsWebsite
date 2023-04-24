@@ -47,7 +47,7 @@ export default function Services() {
                                     <motion.a className='plusIcon2' href="#services"
                                         onClick={() => setExpandResidential(!expandResidential)}
                                     ></motion.a>
-                                    <button className='learnMoreBtn residentialLearn'>Learn More</button>
+                                    <button className='learnMoreBtn serviceLearn'>Learn More</button>
                                 </section>
                             </section>
                             : <Residential
@@ -98,7 +98,7 @@ export default function Services() {
                                     <button className='learnMoreBtn'>Learn More</button>
                                 </section>
                             </section>
-                            : <Commercial expandCommercial={expandSolar} setExpandCommercial={setExpandSolar} />}
+                            : <Solar expandSolar={expandSolar} setExpandSolar={setExpandSolar} />}
                     </motion.div>
                 </div>
             </main>

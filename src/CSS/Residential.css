@@ -1,20 +1,85 @@
-.residentailExpand {
+.serviceExpand {
     display: flex;
-
+    justify-content: center;
+    height: 100%;
 }
 
-.residentialLeft {
+.serviceLeft {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 400px;
+    height: 85%;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.quoteTitle {
+    font-size: 36px;
+    color: white;
+    margin-top: 30px;
+}
+
+.subNavQuote {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-left: -50px;
+    margin-bottom: 50px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 85%;
+    border-radius: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.addBtns {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 85%;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.plusBtn,
+.minusBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 42%;
+    border-radius: 20px;
+    font-size: 80px;
+    color: black;
+    cursor: pointer;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+}
+
+.serviceRight {
     display: flex;
     flex-grow: 1;
     width: 400px;
-    height: 80%;
-}
-
-.residentialRight {
-    display: flex;
-    flex-grow: 1;
-    width: 400px;
-    height: 800px;
+    height: 100%;
     border-radius: 40px;
     background-color: white;
 }
