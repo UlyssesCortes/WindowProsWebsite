@@ -1,9 +1,20 @@
 import React from 'react'
 import '../CSS/Hero.css'
+import { motion, useScroll, useSpring } from "framer-motion";
+
 
 export default function Hero() {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+
     return (
         <main className='hero' id='hero'>
+            <motion.div className="progress-bar" style={{ scaleX }} />
+
             <div className='heroLeft'>
                 <div className='slogan'>
                     <p>Best

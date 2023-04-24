@@ -35,6 +35,10 @@
     padding: 25px;
 }
 
+.black {
+    background-color: #1D1D1D;
+}
+
 .residential {
     color: white;
 }
@@ -63,6 +67,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-right: 10px;
+    margin-top: 75px;
 }
 
 .quotes {
@@ -83,7 +88,8 @@
 
 .plusIcon,
 .plusIcon2,
-.avatarImg {
+.avatarImg,
+.minusIcon {
     width: 53px;
     height: 53px;
     background-image: url("../Assets/Plus.svg");
@@ -100,6 +106,10 @@
 
 .plusIcon2 {
     background-image: url("../Assets/Plus2.svg");
+}
+
+.minusIcon {
+    background-image: url("../Assets/Minus.svg");
 }
 
 .learnMoreBtn {
@@ -134,25 +144,25 @@
     display: flex;
     z-index: 999;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     left: 0;
-    top: 970px;
+    top: 820px;
 }
 
 .commercial[data-isOpen="true"] {
     position: absolute;
     z-index: 999;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     left: 0;
-    top: 970px;
+    top: 820px;
 }
 
 .solar[data-isOpen="true"] {
     position: absolute;
     z-index: 999;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     left: 0;
-    top: 970px;
+    top: 820px;
 }

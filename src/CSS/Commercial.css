@@ -1,0 +1,19 @@
+.commercialExpand {
+    display: flex;
+}
+
+.commercialLeft {
+    display: flex;
+    flex-grow: 1;
+    width: 400px;
+    height: 80%;
+}
+
+.CommercialRight {
+    display: flex;
+    flex-grow: 1;
+    width: 400px;
+    height: 800px;
+    border-radius: 40px;
+    background-color: white;
+}
