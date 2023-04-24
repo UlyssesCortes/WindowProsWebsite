@@ -6,7 +6,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 export default function Hero() {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
+        stiffness: 160,
         damping: 30,
         restDelta: 0.001
     });

@@ -30,7 +30,7 @@
     margin-bottom: 50px;
 }
 
-.location {
+.locationTxt {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -42,6 +42,38 @@
     border-radius: 20px;
     height: 50px;
     cursor: pointer;
+    user-select: none;
+
+}
+
+.locations {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 85%;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: all ease-in-out 5s;
+}
+
+.location {
+    transition: all ease-in-out .1s;
+}
+
+.location span {
+    /* height: 5px; */
+    /* width: 5px; */
+    background-color: black;
+}
+
+.location:hover {
+    translate: 10px;
 }
 
 .addBtns {
@@ -77,9 +109,21 @@
 
 .serviceRight {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
     width: 400px;
     height: 100%;
     border-radius: 40px;
     background-color: white;
+}
+
+.totalPrice {
+    display: flex;
+    color: black;
+}
+
+.totalPrice p {
+    font-size: 120px;
+    font-family: 'Gill Sans';
 }
