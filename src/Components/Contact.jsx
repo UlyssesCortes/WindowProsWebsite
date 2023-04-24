@@ -27,20 +27,27 @@ export default function Contact() {
 
     return (
         <>
-            <div className='contactFormSec' id='contact'>
-                <div className='avatar'>
-                    <Spline scene="https://prod.spline.design/wpLwgZHZEi4N2iWv/scene.splinecode" />
+            <br id='contact'></br>
+            <main className='contactSection'>
+                <section className='subHeader' >
+                    <p className='sectionTitle'>Contact Us</p>
+                    <p>Book, Your, Cleaning</p>
+                </section>
+                <div className='contactFormSec'>
+                    <div className='avatar'>
+                        <Spline scene="https://prod.spline.design/wpLwgZHZEi4N2iWv/scene.splinecode" />
+                    </div>
+                    <form className='formSec'>
+                        <section className='topFormSec'>
+                            <input className='nameInp' type="text" placeholder='Name'></input>
+                            <input className='emailInp' type="text" placeholder='Email'></input>
+                        </section>
+                        <input className='subInp' type="text" placeholder='Subject'></input>
+                        <input className='mesInp' type="text" placeholder='Message'></input>
+                        <button className='sendBtn' type='submit'>SEND</button>
+                    </form>
                 </div>
-                <form className='formSec'>
-                    <section className='topFormSec'>
-                        <input className='nameInp' type="text" placeholder='Name'></input>
-                        <input className='emailInp' type="text" placeholder='Email'></input>
-                    </section>
-                    <input className='subInp' type="text" placeholder='Subject'></input>
-                    <input className='mesInp' type="text" placeholder='Message'></input>
-                    <button className='sendBtn' type='submit'>SEND</button>
-                </form>
-            </div>
+            </main>
         </>
     )
 }
