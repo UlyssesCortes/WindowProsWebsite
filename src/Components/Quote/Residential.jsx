@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import Location from './QuoteElements/Location'
 import '/root/windowPros3/src/CSS/Residential.css'
 
 export default function Residential({ setExpandResidential, expandResidential }) {
-    const [location, setLocation] = useState(null)
+    const [location, setLocation] = useState("Location")
     const [showLocations, setShowLocations] = useState(false)
     return (
         <section className='serviceExpand'>
@@ -14,19 +15,10 @@ export default function Residential({ setExpandResidential, expandResidential })
                     <button className='learnMoreBtn serviceLearn'>Learn More</button>
                 </section>
                 <p className='quoteTitle'>Residential Quote</p>
-                <p className='locationTxt' onClick={() => { setShowLocations(!showLocations) }}>Location</p>
+                <p className='locationTxt' onClick={() => { setShowLocations(!showLocations) }}>{location}<div className={!showLocations ? "downArrow" : "upArrow"}></div></p>
 
                 {showLocations &&
-                    <section className='locations'>
-                        <p className='location'><span></span>Oceanside</p>
-                        <p className='location'>Vista</p>
-                        <p className='location'>San Marcos</p>
-                        <p className='location'>Escondido</p>
-                        <p className='location'>Carlsbad</p>
-                        <p className='location'>Del Mar</p>
-                        <p className='location'>Encinitas</p>
-                        <p className='location'>Other</p>
-                    </section>
+                    <Location setLocation={setLocation} setShowLocations={setShowLocations} showLocations={showLocations} />
                 }
 
                 {!showLocations &&
