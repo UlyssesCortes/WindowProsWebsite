@@ -16,6 +16,9 @@ export default function Residential({ setExpandResidential, expandResidential })
                     <button className='learnMoreBtn serviceLearn'>Learn More</button>
                 </section>
                 <p className='quoteTitle'>Residential Quote</p>
+                <br></br>
+                <p className='quoteSubSlogan'>Window Cleaning</p>
+
                 <p className='locationTxt' onClick={() => { setShowLocations(!showLocations) }}>{location}<div className={!showLocations ? "downArrow" : "upArrow"}></div></p>
 
                 {showLocations &&

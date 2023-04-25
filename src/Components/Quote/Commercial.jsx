@@ -18,6 +18,9 @@ export default function Commercial({ expandCommercial, setExpandCommercial }) {
                     <button className='learnMoreBtn serviceLearn'>Learn More</button>
                 </section>
                 <p className='quoteTitle'>Commercial Quote</p>
+                <br></br>
+                <p className='quoteSubSlogan'>Window Cleaning</p>
+
                 <p className='locationTxt' onClick={() => { setShowLocations(!showLocations) }}>{location}<div className={!showLocations ? "downArrow" : "upArrow"}></div></p>
 
                 {showLocations &&

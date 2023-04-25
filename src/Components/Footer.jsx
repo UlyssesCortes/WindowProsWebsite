@@ -16,13 +16,13 @@ export default function Footer({ expandResidential, setExpandResidential, expand
                     >Commercial</a>
                     <a className='links' href="#services"
                         onClick={() => setExpandSolar(!expandSolar)}
-                    >Solar</a>
+                    >Solar Panel</a>
                 </div>
             </div>
             <div className='footerColumn'>
                 <p className='linkTtitle'>Testimonials</p>
                 <div className='linksFooter'>
-                    <a onClick={() => window.open("https://www.yelp.com/biz/window-pros-oceanside", "_blank")}>Yelp</a>
+                    <a onClick={() => window.open("https://www.yelp.com/biz/window-pros-oceanside", "_blank")} className='links'>Yelp</a>
 
                     <a href='#gallery' className='links'>Clients</a>
                     <a href='#reviews' className='links'>Reviews</a>
@@ -31,7 +31,7 @@ export default function Footer({ expandResidential, setExpandResidential, expand
             <div className='footerColumn'>
                 <p className='linkTtitle'>Contact Us</p>
                 <div className='linksFooter'>
-                    <a onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")}>Join Us</a>
+                    <a onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")} className='links'>Join Us</a>
                     <a href="tel:+7606854653" className='links'>760-685-4653</a>
                     <a href="mailto:john@windowprosofsandiego.com" className='links'>john@windowprosofsandiego.com</a>
                 </div>

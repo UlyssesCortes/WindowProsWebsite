@@ -1,5 +1,6 @@
 import React from 'react'
 import '../CSS/Hero.css'
+import '../CSS/MobileSize.css'
 import { motion, useScroll, useSpring } from "framer-motion";
 
 
@@ -32,7 +33,7 @@ export default function Hero({ expandResidential, setExpandResidential }) {
                     <a className='quoteHeroBtn links' href="#services"
                         onClick={() => setExpandResidential(!expandResidential)}
                     >Get a quote</a>
-                    <button className='joinUsHeroBtn' onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")}>Join Us</button>
+                    <button className='joinUsHeroBtn links' onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")}>Join Us</button>
                 </div>
             </div>
 

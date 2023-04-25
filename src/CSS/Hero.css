@@ -1,11 +1,14 @@
 .hero {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .heroLeft {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    width: 450px;
     gap: 35px;
     margin-top: 50px;
 }
@@ -48,9 +51,11 @@
 }
 
 .windowImg {
+    display: flex;
+    flex-grow: 1;
     background-image: url("../Assets/window.svg");
     z-index: 1;
-    width: 559px;
+    width: 500px;
     height: 680px;
     scale: .9;
     background-repeat: no-repeat;

@@ -18,6 +18,8 @@ export default function Solar({ expandSolar, setExpandSolar }) {
                     <button className='learnMoreBtn serviceLearn'>Learn More</button>
                 </section>
                 <p className='quoteTitle'>Solar Quote</p>
+                <br></br>
+                <p className='quoteSubSlogan'>Solar Panel Cleaning</p>
                 <p className='locationTxt' onClick={() => { setShowLocations(!showLocations) }}>{location}<div className={!showLocations ? "downArrow" : "upArrow"}></div></p>
 
                 {showLocations &&

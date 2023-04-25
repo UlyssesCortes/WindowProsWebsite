@@ -2,18 +2,25 @@
 
 
 .navBar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 3em 0 3em 0;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    margin: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
 }
 
 .title {
     font-size: 32px;
     color: #0066FE;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
 .rightNav {
@@ -30,6 +37,11 @@
     color: black;
     font-family: 'Merriweather', serif;
     cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.links:hover {
+    scale: 1.05;
 }
 
 .contactLink {

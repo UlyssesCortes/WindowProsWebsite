@@ -35,6 +35,10 @@
     padding: 25px;
 }
 
+.serviceBox:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .black {
     background-color: #1D1D1D;
 }
@@ -98,6 +102,10 @@
     cursor: pointer;
 }
 
+.minusIcon {
+    width: 60px;
+}
+
 .avatarImg {
     background-image: url("../Assets/Avatar.svg");
     margin-left: 20px;
@@ -106,6 +114,18 @@
 
 .plusIcon2 {
     background-image: url("../Assets/Plus2.svg");
+}
+
+.plusIcon2:hover,
+.plusIcon:hover {
+    transform: rotate(90deg);
+    transition: all ease-in-out .5s;
+
+}
+
+.minusIcon:hover {
+    transform: rotate(180deg);
+    transition: all ease-in-out .5s;
 }
 
 .minusIcon {
@@ -117,7 +137,6 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
-
 }
 
 .serviceLearn {

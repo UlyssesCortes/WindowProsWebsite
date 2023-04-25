@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 import '../CSS/Services.css'
 import Residential from './Quote/Residential';
@@ -6,10 +6,10 @@ import Commercial from './Quote/Commercial';
 import Solar from './Quote/Solar';
 
 
-export default function Services({ expandResidential, setExpandResidential, expandCommercial, setExpandCommercial, expandSolar, setExpandSolar }) {
-    // const [expandResidential, setExpandResidential] = useState(false)
-    // const [expandCommercial, setExpandCommercial] = useState(false)
-    // const [expandSolar, setExpandSolar] = useState(false)
+export default function Services({
+    expandResidential, setExpandResidential,
+    expandCommercial, setExpandCommercial,
+    expandSolar, setExpandSolar }) {
 
     return (
         <>
@@ -20,9 +20,9 @@ export default function Services({ expandResidential, setExpandResidential, expa
                     <div className='serviceQuote'>
                         <div className='quotes'></div>
                         <p>
-                            WindowPros provides with quick
+                            Crystal-clear windows,
                             <br></br>
-                            and excellent results.
+                            speedy service. A top choice!
                         </p>
                         <div className='avatarImg'></div>
                     </div>
