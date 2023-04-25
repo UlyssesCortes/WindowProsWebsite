@@ -12,7 +12,7 @@ export default function Gallery() {
             <section className='galleryContainer'>
 
                 <div className='piller1 img'>
-                    <div class='overlay'>
+                    <div className='overlay'>
                         <p>John</p>
                     </div>
                 </div>
@@ -20,17 +20,17 @@ export default function Gallery() {
                 <section className='middleImgs'>
                     <section className='topImg'>
                         <div className='rectangle img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Clients House</p>
                             </div>
                         </div>
                         <div className='rombus img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Calvary Chapel</p>
                             </div>
                         </div>
                         <div className='square img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Stone Brewery</p>
                             </div>
                         </div>
@@ -38,17 +38,17 @@ export default function Gallery() {
 
                     <section className='bottomImg'>
                         <div className='rombus2 img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Pizza Port</p>
                             </div>
                         </div>
                         <div className='square2 img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Teri Cafe</p>
                             </div>
                         </div>
                         <div className='rectangle2 img'>
-                            <div class='overlay'>
+                            <div className='overlay'>
                                 <p>Oceanside City</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export default function Gallery() {
                 </section>
 
                 <div className='piller2 img'>
-                    <div class='overlay'>
+                    <div className='overlay'>
                         <p>Carlsbad Client</p>
                     </div>
                 </div>
