@@ -6,10 +6,10 @@ import Commercial from './Quote/Commercial';
 import Solar from './Quote/Solar';
 
 
-export default function Services() {
-    const [expandResidential, setExpandResidential] = useState(false)
-    const [expandCommercial, setExpandCommercial] = useState(false)
-    const [expandSolar, setExpandSolar] = useState(false)
+export default function Services({ expandResidential, setExpandResidential, expandCommercial, setExpandCommercial, expandSolar, setExpandSolar }) {
+    // const [expandResidential, setExpandResidential] = useState(false)
+    // const [expandCommercial, setExpandCommercial] = useState(false)
+    // const [expandSolar, setExpandSolar] = useState(false)
 
     return (
         <>

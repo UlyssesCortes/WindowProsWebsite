@@ -3,7 +3,7 @@ import '../CSS/Hero.css'
 import { motion, useScroll, useSpring } from "framer-motion";
 
 
-export default function Hero() {
+export default function Hero({ expandResidential, setExpandResidential }) {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 160,
@@ -29,7 +29,9 @@ export default function Hero() {
                         100% happiness guarantee</p>
                 </div>
                 <div className='heroBtns'>
-                    <button className='quoteHeroBtn'>Get a quote</button>
+                    <a className='quoteHeroBtn links' href="#services"
+                        onClick={() => setExpandResidential(!expandResidential)}
+                    >Get a quote</a>
                     <button className='joinUsHeroBtn' onClick={() => window.open("https://www.indeed.com/cmp/Window-Pros-1/jobs", "_blank")}>Join Us</button>
                 </div>
             </div>

@@ -1,22 +1,30 @@
 import React from 'react'
 import '../CSS/Footer.css'
 
-export default function Footer() {
+export default function Footer({ expandResidential, setExpandResidential, expandCommercial, setExpandCommercial, expandSolar, setExpandSolar }) {
     return (
         <section className='footer'>
+
             <div className='footerColumn'>
                 <p className='linkTtitle'>Services</p>
                 <div className='linksFooter'>
-                    <a>Residential</a>
-                    <a>Commercial</a>
-                    <a>Solar Panel</a>
+                    <a className='links' href="#services"
+                        onClick={() => setExpandResidential(!expandResidential)}
+                    >Residential</a>
+                    <a className='links' href="#services"
+                        onClick={() => setExpandCommercial(!expandCommercial)}
+                    >Commercial</a>
+                    <a className='links' href="#services"
+                        onClick={() => setExpandSolar(!expandSolar)}
+                    >Solar</a>
                 </div>
             </div>
             <div className='footerColumn'>
                 <p className='linkTtitle'>Testimonials</p>
                 <div className='linksFooter'>
                     <a onClick={() => window.open("https://www.yelp.com/biz/window-pros-oceanside", "_blank")}>Yelp</a>
-                    <a>Clients</a>
+
+                    <a href='#gallery' className='links'>Clients</a>
                     <a href='#reviews' className='links'>Reviews</a>
                 </div>
             </div>
@@ -28,6 +36,7 @@ export default function Footer() {
                     <a href="mailto:john@windowprosofsandiego.com" className='links'>john@windowprosofsandiego.com</a>
                 </div>
             </div>
+
         </section>
     )
 }

@@ -5,6 +5,7 @@ import '/root/windowPros3/src/CSS/Residential.css'
 export default function Residential({ setExpandResidential, expandResidential }) {
     const [location, setLocation] = useState("Location")
     const [showLocations, setShowLocations] = useState(false)
+    const [windowCount, setWindowCount] = useState(0)
     return (
         <section className='serviceExpand'>
             <section className='serviceLeft'>
@@ -23,16 +24,19 @@ export default function Residential({ setExpandResidential, expandResidential })
 
                 {!showLocations &&
                     <section className='addBtns'>
-                        <div className='plusBtn'>+</div>
-                        <p className='count'>8</p>
-                        <div className='minusBtn'>-</div>
+                        <div className='plusBtn' onClick={() => { setWindowCount(windowCount + 1) }}>+</div>
+                        <p className='count'>{windowCount}</p>
+                        <div className='minusBtn' onClick={() => { windowCount > 0 && setWindowCount(windowCount - 1) }}>-</div>
                     </section>
                 }
             </section>
 
             <section className='serviceRight'>
                 <div className='totalPrice'>
-                    <p>$150</p>
+                    <p className='price'>$150</p>
+                    <div className='sendBtnContainer'>
+                        <p className='sendQuoteBtn'>Send quote!</p>
+                    </div>
                 </div>
             </section>
         </section>
