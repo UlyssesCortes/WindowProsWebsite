@@ -20,8 +20,7 @@
 .serviceBoxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .serviceBox {
@@ -226,9 +225,11 @@
         flex-direction: row;
     }
 
+
+
     .serviceBoxes {
         justify-content: center;
-        gap: 40px;
+        gap: 50px;
     }
 
     .sectionSlogan span {
