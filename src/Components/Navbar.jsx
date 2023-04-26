@@ -6,19 +6,17 @@ export default function Navbar({ expandResidential, setExpandResidential }) {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth < 950) {
+        function handleResize() {
+            if (window.innerWidth < 780) {
                 setIsSmallScreen(true);
             } else {
                 setIsSmallScreen(false);
             }
-        };
+        }
 
         window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
 
