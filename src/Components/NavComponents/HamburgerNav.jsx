@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
 import '/root/windowPros3/src/CSS/HamburgerNav.css'
 
-export default function HamburgerNav() {
+export default function HamburgerNav({ expandResidential, setExpandResidential }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
-    const closeMenu = () => {
-        setIsOpen(false);
-    };
     return (
-        <body>
+        <body className='hamburgerNavContainer'>
             <section className='subNav'>
 
                 <section className='subnavIcons'>

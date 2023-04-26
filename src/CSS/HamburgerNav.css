@@ -1,3 +1,7 @@
+.hamburgerNavContainer {
+    display: none;
+}
+
 .subNav {
     z-index: 5;
 }
