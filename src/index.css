@@ -10,6 +10,7 @@ body {
     /* Get rid of margin on mobile */
     margin: 0 8em 0 8em;
     background-color: #E1E1E1;
+
 }
 
 ::-webkit-scrollbar {

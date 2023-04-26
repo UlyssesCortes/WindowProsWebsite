@@ -1,6 +1,7 @@
 .gallery {
     margin-top: 100px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .galleryContainer {

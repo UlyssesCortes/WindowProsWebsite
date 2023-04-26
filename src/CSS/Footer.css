@@ -37,3 +37,43 @@
     cursor: pointer;
     color: white;
 }
+
+
+
+
+@media only screen and (max-width: 950px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footerColumn {
+        justify-content: center;
+        /* align-items: center; */
+        width: 200px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        scale: .8;
+    }
+
+    .avatar {
+        display: flex;
+        position: absolute;
+        height: 65em;
+        width: 140%;
+        padding-bottom: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* .footerColumn {
+        width: 200px;
+    } */
+
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import '../CSS/Services.css'
+import '../CSS/MobileSize.css'
 import Residential from './Quote/Residential';
 import Commercial from './Quote/Commercial';
 import Solar from './Quote/Solar';
@@ -38,10 +39,11 @@ export default function Services({
                             <section className='content'>
                                 <div className='homeIcon servIcon'></div>
                                 <p className='sectionSlogan'><span>Residential</span>
-                                    <br></br>
-                                    Home window
-                                    <br></br>
-                                    cleaning
+                                    <div className='subLoganBox'>
+                                        Home window
+                                        <br></br>
+                                        cleaning
+                                    </div>
                                 </p>
                                 <section className='bottomCard'>
                                     <motion.a className='plusIcon2' href="#services"
@@ -63,10 +65,11 @@ export default function Services({
                             <section className='content'>
                                 <div className='buildingIcon servIcon'></div>
                                 <p className='sectionSlogan'><span>Commercial</span>
-                                    <br></br>
-                                    Buildings window
-                                    <br></br>
-                                    cleaning
+                                    <div className='subLoganBox'>
+                                        Buildings window
+                                        <br></br>
+                                        cleaning
+                                    </div>
                                 </p>
                                 <section className='bottomCard'>
                                     <motion.a className='plusIcon' href="#services"
@@ -85,11 +88,12 @@ export default function Services({
                         {!expandSolar ?
                             <section className='content'>
                                 <div className='solarIcon servIcon'></div>
-                                <p className='sectionSlogan'><span>Solar</span>
-                                    <br></br>
-                                    Panel cleaning and
-                                    <br></br>
-                                    energi saving
+                                <p className='sectionSlogan'><span>Solar Panel</span>
+                                    <div className='subLoganBox'>
+                                        Home window
+                                        <br></br>
+                                        cleaning
+                                    </div>
                                 </p>
                                 <section className='bottomCard'>
                                     <motion.a className='plusIcon' href="#services"

@@ -19,8 +19,9 @@
 
 .serviceBoxes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .serviceBox {
@@ -70,6 +71,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     padding-right: 10px;
     margin-top: 75px;
 }
@@ -184,4 +186,70 @@
     height: 101vh;
     left: 0;
     top: 820px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .services,
+    .hero {
+        padding: 0 10px 0 10px;
+    }
+
+    .services {
+        margin-top: 50px;
+    }
+
+    .slogan {
+        font-size: 45px;
+    }
+
+    .windowImg {
+        margin-top: 50px;
+        width: 400px;
+        height: 480px;
+    }
+
+    .sectionTitle {
+        font-size: 58px;
+    }
+
+
+    .subHeaderServ {
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        flex-direction: row;
+    }
+
+    .serviceBoxes {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sectionSlogan span {
+        font-size: 24px;
+    }
+
+    .serviceBox {
+        height: 100px;
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .subLoganBox,
+    .bottomCard,
+    .serviceQuote {
+        display: none;
+    }
+
+    .homeIcon,
+    .buildingIcon,
+    .solarIcon {
+        scale: .8;
+    }
 }

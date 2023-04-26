@@ -8,10 +8,112 @@
     body {
         margin: 0 0em 0 0em;
     }
-
-    .hero {
-        justify-content: center;
-    }
 }
 
-@media only screen and (max-width: 850px) {}
+@media only screen and (max-width: 850px) {
+
+    .services,
+    .hero,
+    .ourBenefits,
+    .navBar {
+        padding: 0 10px 0 10px;
+    }
+
+    .services {
+        margin-top: 50px;
+    }
+
+    .slogan {
+        font-size: 45px;
+    }
+
+    .windowImg {
+        margin-top: 50px;
+        width: 400px;
+        height: 480px;
+    }
+
+    .sectionTitle {
+        font-size: 58px;
+    }
+
+    .subHeaderServ {
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        flex-direction: row;
+    }
+
+    .serviceBoxes {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sectionSlogan span {
+        font-size: 24px;
+    }
+
+    .serviceBox {
+        height: 100px;
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .subLoganBox,
+    .bottomCard,
+    .serviceQuote {
+        display: none;
+    }
+
+    .homeIcon,
+    .buildingIcon,
+    .solarIcon {
+        scale: .8;
+    }
+
+    .subHeader {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftOurBenefits {
+        scale: .8;
+        display: none;
+    }
+
+    .review2 {
+        display: none;
+    }
+
+    .ourBenefits {
+        scale: .9;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avatar {
+        display: flex;
+        position: absolute;
+        height: 40em;
+        width: 140%;
+        padding-bottom: 50px;
+    }
+
+    .heroBtns a {
+        width: 200px;
+    }
+
+    .navBar {
+        margin: 0em 0 0em 0;
+        padding: 1em;
+    }
+}
