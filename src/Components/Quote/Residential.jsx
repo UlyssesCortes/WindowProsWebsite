@@ -1,11 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Location from './QuoteElements/Location'
 import '/root/windowPros3/src/CSS/Residential.css'
 
 export default function Residential({ setExpandResidential, expandResidential }) {
     const [location, setLocation] = useState("Location")
     const [showLocations, setShowLocations] = useState(false)
-    const [windowCount, setWindowCount] = useState(0)
+    const [windowCount, setWindowCount] = useState(1)
+    const [price, setPrice] = useState("150")
+
+    useEffect(() => {
+        if (windowCount <= 8) {
+            setPrice("150")
+        }
+        if (windowCount > 8 && windowCount < 14) {
+            setPrice("250")
+        }
+        if (windowCount > 14) {
+            setPrice("350")
+        }
+    }, [windowCount])
+
     return (
         <section className='serviceExpand'>
             <section className='serviceLeft'>
@@ -33,12 +47,11 @@ export default function Residential({ setExpandResidential, expandResidential })
                     </section>
                 }
             </section>
-
             <section className='serviceRight'>
                 <div className='totalPrice'>
-                    <p className='price'>$150</p>
+                    <p className='price'>${price}</p>
                     <div className='sendBtnContainer'>
-                        <p className='sendQuoteBtn'>Send quote!</p>
+                        <a className='sendQuoteBtn' href='#contact'>Send quote!</a>
                     </div>
                 </div>
             </section>

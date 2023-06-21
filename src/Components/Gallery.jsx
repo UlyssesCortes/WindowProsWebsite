@@ -1,10 +1,12 @@
 import React from 'react'
 import '../CSS/Gallery.css'
+import { Partytown } from '@builder.io/partytown/react';
 
 
 export default function Gallery() {
     return (
         <main className='gallery' >
+            {/* <Partytown debug={true} forward={['dataLayer.push']} /> */}
             <section className='subHeader'>
                 <p className='sectionTitle'>Gallery</p>
                 <p>Our Customers</p>
